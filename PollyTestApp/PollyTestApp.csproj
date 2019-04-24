@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>wwwroot\</OutputPath>
+    <DocumentationFile>wwwroot\PollyTestApp.xml</DocumentationFile>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCoreRateLimit" Version="3.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0-preview4-19216-03" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc2" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\PollyDemos\PollyDemos.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Content Update="appsettings.Development.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

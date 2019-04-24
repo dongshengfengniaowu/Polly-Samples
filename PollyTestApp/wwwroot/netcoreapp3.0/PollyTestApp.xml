@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PollyTestApp</name>
+    </assembly>
+    <members>
+        <member name="M:PollyTestApp.Controllers.NonThrottledFaultingController.Get">
+            <summary>
+            Returns a simple string array of values.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PollyTestApp.Controllers.NonThrottledFaultingController.Get(System.Int32)">
+            <summary>
+            Accepts a simple integer parameter, which is written back to the
+            response in the form of a simple message.  Faults by delaying for a 
+            fixed period, before responding.
+            </summary>
+            <param name="id">Integer value that gets returned in the response
+            message.</param>
+            <returns>Returns: "Response from server to request #{id}"</returns>
+        </member>
+        <member name="M:PollyTestApp.Controllers.NonThrottledGoodController.Get">
+            <summary>
+            Returns a simple string array of values.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PollyTestApp.Controllers.NonThrottledGoodController.Get(System.Int32)">
+            <summary>
+            Accepts a simple integer parameter, which is written back to the
+            response in the form of a simple message.  Faults by delaying for a 
+            fixed period, before responding.
+            </summary>
+            <param name="id">Integer value that gets returned in the response
+            message.</param>
+            <returns>Returns: "Response from server to request #{id}"</returns>
+        </member>
+        <member name="M:PollyTestApp.Controllers.ValuesController.Get">
+            <summary>
+            Returns a simple string array of values.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PollyTestApp.Controllers.ValuesController.Get(System.Int32)">
+            <summary>
+            Accepts a simple integer parameter, which is written back to the
+            response in the form of a simple message.
+            </summary>
+            <param name="id">Integer value that gets returned in the response
+            message.</param>
+            <returns>Returns: "Response from server to request #{id}"</returns>
+        </member>
+    </members>
+</doc>
